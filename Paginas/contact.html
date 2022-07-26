@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/style.css">
+	<title>Contact</title>
+</head>
+<body>
+	<header>
+		<nav>
+			
+			<h3><a href="../index.html" class="logo">ZAPH'S ART</a></h3>
+			<img src="../Imgs/Hamburger_icon.svg.png" alt="nav_menu" class="nav__menu">
+			<ul>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="commissions.html">Commissions</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>				
+			</ul>
+		</nav>
+	</header>
+
+	
+	<main class="contact">
+		<img src="../Imgs/Nyehe.jpg" width="100" height="100" alt="img contacto">
+		<h1>CONTACT</h1>
+		<article>
+			<form>
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" placeholder="Name" id="name" name="name">
+				</div>
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" placeholder="yourmail@gmail.com" name="email" id="email">
+				</div>
+				<div>
+					<label for="comments"> Comments:</label><br>
+					<textarea placeholder="Your comments here"></textarea>
+				</div>	
+				<div>
+					<h3>Would you like to commission?</h3>
+					<label for="yes">Yes</label>
+					<input type="radio" name="commission" value="Yes">
+					<label for="no">No</label>
+					<input type="radio" name="commission" value="No">
+				</div>
+				<div>
+					<h3>How many commissions?</h3>
+					<select name="letra" id="letra"> 
+						<option value="x">0</option>
+						<option value="y">1</option>
+						<option value="z">2+</option>
+					</select>
+				</div>				
+				<div>
+					<h3>Would you like to recieve updates on new art?</h3>
+					<label for="acept">Yes, please</label>
+					<input type="checkbox" name="acept" value="1" id="acept">
+				</div>
+				<div>
+					<button type="submit" name="send" id="send">Send</button>
+					<button type="reset"  name="reset" id="reset">Reset</button>
+				</div>
+				
+			</form>
+		</article>
+	</main>
+	<footer id="zaphfoot">
+		<h3><a href="portfolio.html">Portfolio</a></h3>
+		<h3><a href="commissions.html">Commissions</a></h3>
+		<h3><a href="../index.html">ZAPH'S ART</a></h3>
+		<h3><a href="about.html">About</a></h3>
+		<h3><a href="contact.html">Contact</a></h3>
+		
+	</footer>
+</body>
+</html>

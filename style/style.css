@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+main{
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0px;
+  background-color: #60CAA4;
+  box-shadow: 0px 5px 9px 4px rgba(41, 40, 40, 0.555);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+ 
+}
+.nav__menu{
+  display: none;
+}
+.logo {
+  text-decoration: none;
+  font-weight: 900;
+  padding: 0px 16px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+ }
+li {
+padding: 0px 16px;
+  
+  
+}
+li a{
+  font-weight: bolder ;
+  text-decoration: none;
+  
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+input {
+  border: 2px solid #60CAA4;
+}
+
+.hero { 
+  display: block;
+  text-align: center;
+  padding: 250px 0px;
+  background-image: url(../Imgs/Coommscrop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  }
+
+.hero__title {
+  color: white;
+  position: relative;
+  }
+
+.hero__title a{
+  text-decoration: none;
+  color: white;
+}
+
+.hero__title h1 {
+  font-size: 50px;
+  }
+.about__me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__info {
+  width: 40%;
+ }
+
+
+.about__me img{
+  width: 40%;
+  padding: 50px;
+    
+    }
+
+  @media only screen and (max-width: 768px){
+   
+    .nav__menu{
+      display: block;
+      width: 30px;
+      margin-right:20px;
+    }
+    ul {
+      display: none;
+    }
+    
+    .about__me{
+     flex-wrap: wrap;
+     padding: 50px 0px;
+    }
+    
+    .about__info {
+      width: 90%;
+      text-align: center;
+     }
+    
+    
+    .about__me img{
+      width: 60%;
+      padding: 0px;
+      margin-bottom: 30px;
+        
+        }
+
+  }
+
+.character__design{
+  padding: 70px 0px 0px 25px;
+}
+.cd__title {
+  grid-area: title;
+}
+.img__container{
+  display: grid;
+  grid-template-areas: 
+  'example1 example2 example3'
+  'example4 example5 example6';
+  gap: 10px;
+  width: 100%;  
+}
+.img__container img{
+  width: 100%;
+}
+.example__1{ 
+  grid-area: example1; }
+.example__2{ 
+  grid-area: example2;}
+.example__3{ 
+  grid-area: example3;}
+.example__4{ 
+  grid-area: example4;}
+.example__5{ 
+  grid-area: example5;}
+.example__6{ 
+  grid-area: example6;}
+
+  @media only screen and (max-width: 1280px){
+    .img__container{
+      grid-template-areas:
+      'example1 example2'
+      'example3 example4'
+      'example5 example6';
+    }
+
+  }
+  @media only screen and (max-width: 768px){
+    .img__container{
+      grid-template-areas:
+      'example1' 'example2'
+      'example3' 'example4'
+      'example5' 'example6';
+    }
+
+  }
+
+  .comm__order{
+    display: block;
+    padding: 100px;
+  }
+ 
+  .comm__card{
+  width: 30%;
+  }
+  .contact{
+    margin:0 auto;
+    width: 50%;
+    text-align: center;
+    padding: 5%;
+    
+  }
+  .contact button{
+      background-color: #60CAA4;
+      padding: 10px 30px;
+      font-weight: bolder;
+      color: white;
+      border: none;
+  }
+
+#zaphfoot{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #60CAA4;
+  padding: 20px;  
+}
+
+ 
