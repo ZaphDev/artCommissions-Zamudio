@@ -1,0 +1,46 @@
+.hero { 
+    display: block;
+    text-align: center;
+    padding: 250px 0px;
+    background-image: url(../Imgs/Coommscrop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+
+    &__title {
+        color: white;
+        position: relative;
+       
+        a{
+            text-decoration: none;
+            color: white;
+            }
+            
+        h1 {
+            font-size: 50px;
+            }
+        }
+    }
+.about__me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__info {
+        width: 40%;
+        }
+    img{
+        width: 40%;
+        padding: 50px;
+        transition: transform 1s ease;
+        transform: scale(1);
+        &:hover{
+            transform: scale(1.1);        
+            }
+        }
+
+    }
+   

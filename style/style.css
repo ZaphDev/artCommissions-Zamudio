@@ -40,7 +40,7 @@ nav {
 .nav__menu{
   display: none;
 }
-.logo {
+.nav__logo {
   text-decoration: none;
   font-weight: 900;
   padding: 0px 16px;
@@ -100,7 +100,7 @@ input {
   margin: 0 auto;
 }
 
-.about__info {
+.about__me__info {
   width: 40%;
  }
 

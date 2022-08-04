@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+    background-color: #60CAA4;
+    box-shadow: 0px 5px 9px 4px rgba(41, 40, 40, 0.555);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: rgb(34,117,105);
+    background: linear-gradient(0deg, rgb(34, 172, 151) 0%, rgba(61,176,155,1) 31%, rgb(20, 209, 184) 100%);
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    &__menu{
+        display: none;
+    }
+    &__logo {
+        text-decoration: none;
+        font-weight: 900;
+        padding: 0px 16px;
+    }
+   
+  }
+  @keyframes myAnim {
+      0% {
+          opacity: 0;
+          transform: rotateX(-100deg);
+          transform-origin: top;
+      }
+  
+      100% {
+          opacity: 1;
+          transform: rotateX(0deg);
+          transform-origin: top;
+      }
+  }
+  

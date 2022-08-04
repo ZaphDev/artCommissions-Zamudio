@@ -1,0 +1,34 @@
+@media only screen and (max-width: 768px){
+   
+    .navbar__menu{
+      display: block;
+      width: 30px;
+      margin-right:20px;
+    }
+    ul {
+      display: none;
+    }
+    
+    .about__me{
+     flex-wrap: wrap;
+     padding: 50px 0px;
+    }
+    
+    .about__me__info {
+      width: 90%;
+      text-align: center;
+     }
+    
+    
+    .about__me img{
+      width: 60%;
+      padding: 0px;
+      margin-bottom: 30px;
+        
+        }
+    #zaphfoot{
+      flex-direction: column;
+      align-items: center;      
+    }
+
+  }

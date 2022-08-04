@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+input {
+  border: 2px solid #60CAA4;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul li {
+  padding: 0px 16px;
+}
+
+ul li a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0px;
+  background-color: #60CAA4;
+  box-shadow: 0px 5px 9px 4px rgba(41, 40, 40, 0.555);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: #227569;
+  background: linear-gradient(0deg, #22ac97 0%, #3db09b 31%, #14d1b8 100%);
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.navbar__menu {
+  display: none;
+}
+
+.navbar__logo {
+  text-decoration: none;
+  font-weight: 900;
+  padding: 0px 16px;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: rotateX(-100deg);
+    transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
+}
+
+#zaphfoot {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #60CAA4;
+  padding: 20px;
+  background: #227569;
+  background: linear-gradient(0deg, #22ac97 0%, #3db09b 31%, #14d1b8 100%);
+}
+
+.hero {
+  display: block;
+  text-align: center;
+  padding: 250px 0px;
+  background-image: url(../Imgs/Coommscrop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.hero__title {
+  color: white;
+  position: relative;
+}
+
+.hero__title a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero__title h1 {
+  font-size: 50px;
+}
+
+.about__me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__me__info {
+  width: 40%;
+}
+
+.about__me img {
+  width: 40%;
+  padding: 50px;
+  transition: transform 1s ease;
+  transform: scale(1);
+}
+
+.about__me img:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__menu {
+    display: block;
+    width: 30px;
+    margin-right: 20px;
+  }
+  ul {
+    display: none;
+  }
+  .about__me {
+    flex-wrap: wrap;
+    padding: 50px 0px;
+  }
+  .about__me__info {
+    width: 90%;
+    text-align: center;
+  }
+  .about__me img {
+    width: 60%;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  #zaphfoot {
+    flex-direction: column;
+    align-items: center;
+  }
+}
