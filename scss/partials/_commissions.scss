@@ -1,0 +1,30 @@
+$cardborder: (
+    1: green,
+    2: blue,
+    3: red
+);
+@each $card, $color in $cardborder {
+    .card#{$card}{
+        background-color: $color;
+        border-width: 15px;
+    }
+};
+.comm__order{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+}
+
+.comm__container{
+    display: flex;
+}
+.comm__card {
+    width: 33%;
+    text-align: center;
+    color: white;
+    
+    img{
+        width: 100%;
+    }
+}
