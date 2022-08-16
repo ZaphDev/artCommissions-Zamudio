@@ -12,12 +12,13 @@ $cardborder: (
 .comm__order{
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 100px 0px 20px 0px;
     align-items: center;
 }
 
 .comm__container{
     display: flex;
+    flex-wrap: wrap;
 }
 .comm__card {
     width: 33%;

@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1280px){
+  .img__container{
+    grid-template-areas:
+    'example1 example2'
+    'example3 example4'
+    'example5 example6';
+  }
+
+}
 @media only screen and (max-width: 768px){
    
     .navbar__menu{
@@ -12,29 +21,35 @@
     .about__me{
      flex-wrap: wrap;
      padding: 50px 0px;
-    }
-    
-    .about__me__info {
+     
+     &__info {
       width: 90%;
       text-align: center;
      }
-    
-    
-    .about__me img{
+     img{
       width: 60%;
       padding: 0px;
       margin-bottom: 30px;
         
         }
+    }
+        
     .comm__container{
       display:block;
     }
     .comm__card{
       width: 100%;
     }
+    .img__container{
+      grid-template-areas:
+      'example1' 'example2'
+      'example3' 'example4'
+      'example5' 'example6';
+    }   
     #zaphfoot{
       flex-direction: column;
       align-items: center;      
     }
 
   }
+ 
