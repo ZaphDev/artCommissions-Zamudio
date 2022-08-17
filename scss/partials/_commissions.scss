@@ -1,31 +1,58 @@
 $cardborder: (
-    1: green,
-    2: blue,
-    3: red
+    1: MediumAquaMarine,
+    2: PaleTurquoise,
+    3: MediumTurquoise
 );
 @each $card, $color in $cardborder {
     .card#{$card}{
         background-color: $color;
-        border-width: 15px;
+        
     }
 };
 .comm__order{
     display: flex;
     flex-direction: column;
-    padding: 100px 0px 20px 0px;
+    padding: 80px 0px 20px 0px;
     align-items: center;
+    h1{
+        font-weight: bolder;
+    }
+    iframe{
+        width: 80%;
+        height: 500px;
+    }
 }
 
 .comm__container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0px;    
 }
+
 .comm__card {
-    width: 33%;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
     text-align: center;
-    color: white;
-    
+    color: black;
+    border-radius: 10px;
+    h3{
+        font-weight: bold;
+        font-size: larger;
+        padding: 5px;
+    }
+    p{
+        font-weight: bold;
+        margin: 2px;
+    }
+       
     img{
         width: 100%;
     }
+}
+
+.comm__style{
+    display:flex;
+    justify-content: space-between;
 }

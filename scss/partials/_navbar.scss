@@ -11,9 +11,7 @@
     background: rgb(34,117,105);
     background: linear-gradient(0deg, rgb(34, 172, 151) 0%, rgba(61,176,155,1) 31%, rgb(20, 209, 184) 100%);
     animation: myAnim 1s ease 0s 1 normal forwards;
-    &__menu{
-        display: none;
-    }
+
     &__logo {
         text-decoration: none;
         font-weight: 900;

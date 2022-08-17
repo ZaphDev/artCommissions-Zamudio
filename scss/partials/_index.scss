@@ -28,13 +28,24 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 30px 0px; 
+    
+    h3{
+        font-weight: bolder;
+        margin: auto;
+    }
 
     &__info {
         width: 40%;
+        padding: 30px 0px;
+        margin: 0;
+        p{
+            margin: 0;
+        }
         }
     img{
-        width: 40%;
-        padding: 50px;
+        width: 30%;
+        padding: 20px;
         transition: transform 1s ease;
         transform: scale(1);
         &:hover{

@@ -11,6 +11,7 @@ body {
 a {
   color: black;
   text-decoration: none;
+  font-weight: bolder;
 }
 
 input {
@@ -45,10 +46,6 @@ ul li a {
   background: #227569;
   background: linear-gradient(0deg, #22ac97 0%, #3db09b 31%, #14d1b8 100%);
   animation: myAnim 1s ease 0s 1 normal forwards;
-}
-
-.navbar__menu {
-  display: none;
 }
 
 .navbar__logo {
@@ -110,15 +107,27 @@ ul li a {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 30px 0px;
+}
+
+.about__me h3 {
+  font-weight: bolder;
+  margin: auto;
 }
 
 .about__me__info {
   width: 40%;
+  padding: 30px 0px;
+  margin: 0;
+}
+
+.about__me__info p {
+  margin: 0;
 }
 
 .about__me img {
-  width: 40%;
-  padding: 50px;
+  width: 30%;
+  padding: 20px;
   transition: transform 1s ease;
   transform: scale(1);
 }
@@ -171,40 +180,67 @@ ul li a {
 }
 
 .card1 {
-  background-color: green;
-  border-width: 15px;
+  background-color: MediumAquaMarine;
 }
 
 .card2 {
-  background-color: blue;
-  border-width: 15px;
+  background-color: PaleTurquoise;
 }
 
 .card3 {
-  background-color: red;
-  border-width: 15px;
+  background-color: MediumTurquoise;
 }
 
 .comm__order {
   display: flex;
   flex-direction: column;
-  padding: 100px 0px 20px 0px;
+  padding: 80px 0px 20px 0px;
   align-items: center;
+}
+
+.comm__order h1 {
+  font-weight: bolder;
+}
+
+.comm__order iframe {
+  width: 80%;
+  height: 500px;
 }
 
 .comm__container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0px;
 }
 
 .comm__card {
-  width: 33%;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
   text-align: center;
-  color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.comm__card h3 {
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px;
+}
+
+.comm__card p {
+  font-weight: bold;
+  margin: 2px;
 }
 
 .comm__card img {
   width: 100%;
+}
+
+.comm__style {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -214,14 +250,6 @@ ul li a {
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar__menu {
-    display: block;
-    width: 30px;
-    margin-right: 20px;
-  }
-  ul {
-    display: none;
-  }
   .about__me {
     flex-wrap: wrap;
     padding: 50px 0px;

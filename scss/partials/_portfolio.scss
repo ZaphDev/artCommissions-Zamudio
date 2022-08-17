@@ -1,0 +1,22 @@
+.character__design{
+    padding: 70px 0px 0px 25px;
+  }
+  .cd__title {
+    grid-area: title;
+  }
+  .img__container{
+    display: grid;
+    grid-template-areas: 
+    'example1 example2 example3'
+    'example4 example5 example6';
+    gap: 10px;
+    width: 100%;  
+    img{
+        width: 100%;
+      }
+  } 
+  @for $example from 1 through 6 {
+    .example__#{$example} {
+        grid-area: example#{$example};
+    }
+}
