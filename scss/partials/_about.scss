@@ -1,0 +1,12 @@
+.aboutMe{
+    display:flex;
+    flex-direction: column;
+    padding-top: 80px;
+    align-items: center;
+    img{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }   
+}
