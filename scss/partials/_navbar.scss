@@ -17,6 +17,20 @@
         font-weight: 900;
         padding: 0px 16px;
     }
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        li {
+            padding: 0px 16px;
+            a{
+                font-weight: bolder ;
+                text-decoration: none;
+                
+              }
+              
+            }
+       }
    
   }
   @keyframes myAnim {

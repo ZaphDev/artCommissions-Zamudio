@@ -32,30 +32,32 @@
 
 	
 	<main class="contact">
-		<img src="../Imgs/Nyehe.jpg" width="100" height="100" alt="img contacto">
+		<img src="../Imgs/Nyehe.jpg" alt="img contacto">
 		<h1>CONTACT</h1>
 		<article>
 			<form>
-				<div>
-					<label for="name">Name:</label>
-					<input type="text" placeholder="Name" id="name" name="name">
+				<div class="contact__info">
+					<div class="contact__spacing">
+						<label for="name">Name:</label>
+						<input type="text" placeholder="Name" id="name" name="name">
+					</div>
+					<div class="contact__spacing">
+						<label for="email">Email:</label>
+						<input type="email" placeholder="yourmail@gmail.com" name="email" id="email">
+					</div>
+					<div class="contact__spacing">
+						<label for="comments"> Comments:</label>
+						<input placeholder="Your comments here"></input>
+					</div>
 				</div>
-				<div>
-					<label for="email">Email:</label>
-					<input type="email" placeholder="yourmail@gmail.com" name="email" id="email">
-				</div>
-				<div>
-					<label for="comments"> Comments:</label><br>
-					<textarea placeholder="Your comments here"></textarea>
-				</div>	
-				<div>
+				<div class="contact__spacing">
 					<h3>Would you like to commission?</h3>
 					<label for="yes">Yes</label>
 					<input type="radio" name="commission" value="Yes">
 					<label for="no">No</label>
 					<input type="radio" name="commission" value="No">
 				</div>
-				<div>
+				<div class="contact__spacing">
 					<h3>How many commissions?</h3>
 					<select name="letra" id="letra"> 
 						<option value="x">0</option>
@@ -63,12 +65,12 @@
 						<option value="z">2+</option>
 					</select>
 				</div>				
-				<div>
+				<div class="contact__spacing">
 					<h3>Would you like to recieve updates on new art?</h3>
 					<label for="acept">Yes, please</label>
 					<input type="checkbox" name="acept" value="1" id="acept">
 				</div>
-				<div>
+				<div >
 					<button type="submit" name="send" id="send">Send</button>
 					<button type="reset"  name="reset" id="reset">Reset</button>
 				</div>

@@ -5,6 +5,7 @@
     'example3 example4'
     'example5 example6';
   }
+  
 
 }
 @media only screen and (max-width: 768px){  
@@ -38,6 +39,11 @@
       'example3' 'example4'
       'example5' 'example6';
     }   
+    .contact{
+      &__info{
+        margin: 0px 400px;
+      }
+    }
     #zaphfoot{
       flex-direction: column;
       align-items: center;      
